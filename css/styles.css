@@ -8,6 +8,10 @@
   clear: both;
 }
 
+html{
+  scroll-behavior: unset !important;
+}
+
 body {
   font-size: 30px;
   font-weight: 400;
@@ -159,7 +163,8 @@ ul {
 }
 
 .banner .banner_content .banner_right img {
-  margin-left: 50px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .services {
@@ -1007,20 +1012,23 @@ footer .copyright .social a:hover{
   background-color: #f55f8d;
   text-align: center;
   position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 0 20px 10px 10px;
+  bottom: 20px;
+  right: 20px;
   z-index: 2;
   border-radius: 10px;
-}
-
-.arrow_up a{
   color: white;
   line-height: 60px;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .arrow_up:hover{
   cursor: pointer;
+}
+
+.cd-top--is-visible { 
+  visibility: visible;
+  opacity: 1;
 }
 
 @keyframes move {
