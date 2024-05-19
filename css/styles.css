@@ -26,6 +26,13 @@ button {
   border-style: hidden;
   color: white;
   text-transform: uppercase;
+  transition: all .5s;
+  background-size: 200%;
+}
+
+button:hover{
+  background-position: right center;
+  cursor: pointer;
 }
 
 header {
@@ -701,8 +708,13 @@ ul {
   left: 20px;
 }
 
-.blog .blog_content .blog_info .blog_item .blog_header button{
+.blog .blog_content .blog_info .blog_item .blog_header .blog_button button{
   border-radius: 10px;
+}
+
+.blog .blog_content .blog_info .blog_item .blog_header .blog_button button:hover{
+  cursor: default;
+  background-position: 0%;
 }
 
 .blog .blog_content .blog_info .blog_item .blog_body{
@@ -859,13 +871,6 @@ footer .footer_content .newletters .footer_form button{
   border: none;
   border-radius: 0 10px 10px 0;
   width: 80px;
-  cursor: pointer;
-  transition: all .5s;
-  background-size: 200%;
-}
-
-footer .footer_content .newletters .footer_form button:hover{
-  background-position: right center;
 }
 
 footer .footer_info{
